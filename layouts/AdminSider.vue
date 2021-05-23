@@ -79,6 +79,7 @@ margin-top: 80px;
 .ground{
     flex-grow: 1!important;
     padding: 32px;
+    height: 100%;
     background-color: #f2f5f8;
     display: flex;
     justify-content: center;
