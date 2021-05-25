@@ -56,9 +56,7 @@
       </v-icon>
       facebook
       </v-btn>
-                <div class="text-center"> 
-                <a href="/auth/forgot-password" class="text-center"> Forgot password? </a>
-                </div>
+
         </v-form>
         </v-card-text>
         </v-card>

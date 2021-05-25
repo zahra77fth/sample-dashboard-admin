@@ -1,0 +1,11 @@
+{
+  "ForgetPasswordCard": {
+    "description": "Auto imported from components/ForgetPasswordCard.vue"
+  },
+  "LoginCard": {
+    "description": "Auto imported from components/LoginCard.vue"
+  },
+  "SignupCard": {
+    "description": "Auto imported from components/SignupCard.vue"
+  }
+}

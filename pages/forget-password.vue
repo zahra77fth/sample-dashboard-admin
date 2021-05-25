@@ -1,8 +1,8 @@
 <template>
 <div class="ground">
-    <LoginCard />
+    <ForgetPasswordCard />
     <div class="register-link"> 
-        Don't have an account? <NuxtLink to="/signup">Create one here</NuxtLink>
+     <NuxtLink to="/login">Back to sign In</NuxtLink>
     </div>
 </div>
 </template>
@@ -19,6 +19,7 @@ export default({
     flex-direction: column;
 }
 .register-link{
-    margin-top: 48px;
+    margin-top: 48px; 
+    margin-bottom: 48px;
 }
 </style>

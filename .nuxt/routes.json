@@ -1,0 +1,30 @@
+[
+  {
+    "name": "forget-password",
+    "path": "/forget-password",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/forget-password.vue",
+    "chunkName": "pages/forget-password",
+    "_name": "_6498c930"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_51344b5e"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/signup.vue",
+    "chunkName": "pages/signup",
+    "_name": "_21af0d73"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_f0e6af72"
+  }
+]

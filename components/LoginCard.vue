@@ -40,7 +40,7 @@
                      x-large
                 >facebook</v-btn>
                 <div class="text-center"> 
-                <a href="/auth/forgot-password" class="text-center"> Forgot password? </a>
+                <NuxtLink to="/forget-password" class="text-center"> Forget password? </NuxtLink>
                 </div>
         </v-form>
         </v-card-text>
