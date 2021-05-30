@@ -10,8 +10,9 @@ import '../node_modules/vuetify/dist/vuetify.css'
 
 import _77bffefc from '../layouts/AdminSider.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _42f419ef from '../layouts/user-sider.vue'
 
-const layouts = { "_AdminSider": sanitizeComponent(_77bffefc),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_AdminSider": sanitizeComponent(_77bffefc),"_default": sanitizeComponent(_6f6c098b),"_user-sider": sanitizeComponent(_42f419ef) }
 
 export default {
   render (h, props) {
