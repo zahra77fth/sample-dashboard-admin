@@ -3,11 +3,11 @@
     <div class="content">
         <div class="navbar">
             <div class="navbar_menu-icon">
-            <v-icon light>mdi-menu-light</v-icon>
+            <v-btn class="menu-btn" color="primary"><v-icon light>mdi-dots-grid</v-icon></v-btn>
             To Do
             </div>
             <v-form class="todo">
-                    <v-btn small> <v-icon dark right>
+                    <v-btn class="search-btn" small> <v-icon dark right>
                     mdi-magnify 
                     </v-icon>
                     <v-text-field
@@ -25,6 +25,12 @@
         <div class="page-content">
             <div class="sider" >
                 <div class="sider_header"></div>
+                <NuxtLink to="/forget-password" class="text-center"> My Day </NuxtLink>
+                <NuxtLink to="/forget-password" class="text-center"> Important </NuxtLink>
+                <NuxtLink to="/forget-password" class="text-center"> Planned </NuxtLink>
+                <NuxtLink to="/forget-password" class="text-center"> Assigned to you</NuxtLink>
+                <NuxtLink to="/forget-password" class="text-center"> Tasks</NuxtLink>
+
             </div>
             <div class="ground">
                 <Nuxt />
@@ -79,7 +85,7 @@ background-color: #f4f4f4;
 .v-text-field{
     margin-left: 10px !important;
 }
-.v-btn{
+.search-btn{
     opacity: 80%;
     width: 400px;
 }
@@ -88,6 +94,9 @@ background-color: #f4f4f4;
 }
 .v-input__slot{
     border: 0 !important;
-
+}
+.menu-btn{
+    width: 50px;
+    background-color: #0078D7 !important;
 }
 </style>
