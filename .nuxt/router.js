@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _6498c930 = () => interopDefault(import('../pages/forget-password.vue' /* webpackChunkName: "pages/forget-password" */))
 const _51344b5e = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _21af0d73 = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
+const _7274c117 = () => interopDefault(import('../pages/todo-pages/tasks.vue' /* webpackChunkName: "pages/todo-pages/tasks" */))
 const _f0e6af72 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/signup",
     component: _21af0d73,
     name: "signup"
+  }, {
+    path: "/todo-pages/tasks",
+    component: _7274c117,
+    name: "todo-pages-tasks"
   }, {
     path: "/",
     component: _f0e6af72,

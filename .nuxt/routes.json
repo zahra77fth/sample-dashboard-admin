@@ -21,6 +21,13 @@
     "_name": "_21af0d73"
   },
   {
+    "name": "todo-pages-tasks",
+    "path": "/todo-pages/tasks",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/tasks.vue",
+    "chunkName": "pages/todo-pages/tasks",
+    "_name": "_7274c117"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/index.vue",
