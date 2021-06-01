@@ -4,11 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6498c930 = () => interopDefault(import('../pages/forget-password.vue' /* webpackChunkName: "pages/forget-password" */))
-const _51344b5e = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
-const _21af0d73 = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
-const _7274c117 = () => interopDefault(import('../pages/todo-pages/tasks.vue' /* webpackChunkName: "pages/todo-pages/tasks" */))
-const _f0e6af72 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _731a44a8 = () => interopDefault(import('..\\pages\\forget-password.vue' /* webpackChunkName: "pages/forget-password" */))
+const _37bb3cd6 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _0c064afb = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
+const _340b0844 = () => interopDefault(import('..\\pages\\todo-pages\\tasks.vue' /* webpackChunkName: "pages/todo-pages/tasks" */))
+const _6e1399bf = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -23,23 +23,23 @@ export const routerOptions = {
 
   routes: [{
     path: "/forget-password",
-    component: _6498c930,
+    component: _731a44a8,
     name: "forget-password"
   }, {
     path: "/login",
-    component: _51344b5e,
+    component: _37bb3cd6,
     name: "login"
   }, {
     path: "/signup",
-    component: _21af0d73,
+    component: _0c064afb,
     name: "signup"
   }, {
     path: "/todo-pages/tasks",
-    component: _7274c117,
+    component: _340b0844,
     name: "todo-pages-tasks"
   }, {
     path: "/",
-    component: _f0e6af72,
+    component: _6e1399bf,
     name: "index"
   }],
 

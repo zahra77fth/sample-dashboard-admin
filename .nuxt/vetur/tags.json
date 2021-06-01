@@ -1,9 +1,21 @@
 {
+  "AddTask": {
+    "description": "Auto imported from components/AddTask.vue"
+  },
+  "BackgroundLines": {
+    "description": "Auto imported from components/BackgroundLines.vue"
+  },
   "ForgetPasswordCard": {
     "description": "Auto imported from components/ForgetPasswordCard.vue"
   },
   "LoginCard": {
     "description": "Auto imported from components/LoginCard.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/Navbar.vue"
+  },
+  "Sider": {
+    "description": "Auto imported from components/Sider.vue"
   },
   "SignupCard": {
     "description": "Auto imported from components/SignupCard.vue"
