@@ -1,15 +1,9 @@
-<template>
-  <div>
-    <CompletedTodos></CompletedTodos>
-    <GetTodos></GetTodos>
-    <CurrentTodos></CurrentTodos>
-  </div>
-</template>
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-<script>
-export default {
-  layout: "user-sider",
-      state: {
+Vue.use(Vuex)
+Vuex.Store({
+    state: {
         todos: [],
         newTodo: ''
     },
@@ -68,8 +62,4 @@ export default {
         completedTodos: state => state.todos.filter((todo) => {return todo.completed})
     }
 
-};
-</script>
-<style scoped>
-
-</style>
+})

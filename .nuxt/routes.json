@@ -2,36 +2,36 @@
   {
     "name": "forget-password",
     "path": "/forget-password",
-    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\forget-password.vue",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/forget-password.vue",
     "chunkName": "pages/forget-password",
-    "_name": "_731a44a8"
+    "_name": "_6498c930"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\login.vue",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/login.vue",
     "chunkName": "pages/login",
-    "_name": "_37bb3cd6"
+    "_name": "_51344b5e"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\signup.vue",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/signup.vue",
     "chunkName": "pages/signup",
-    "_name": "_0c064afb"
+    "_name": "_21af0d73"
   },
   {
     "name": "todo-pages-tasks",
     "path": "/todo-pages/tasks",
-    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\tasks.vue",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/tasks.vue",
     "chunkName": "pages/todo-pages/tasks",
-    "_name": "_340b0844"
+    "_name": "_7274c117"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\index.vue",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_6e1399bf"
+    "_name": "_f0e6af72"
   }
 ]
