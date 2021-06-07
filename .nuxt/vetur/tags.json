@@ -2,17 +2,8 @@
   "BackgroundLines": {
     "description": "Auto imported from components/BackgroundLines.vue"
   },
-  "CompletedTodos": {
-    "description": "Auto imported from components/CompletedTodos.vue"
-  },
-  "CurrentTodo": {
-    "description": "Auto imported from components/CurrentTodo.vue"
-  },
   "ForgetPasswordCard": {
     "description": "Auto imported from components/ForgetPasswordCard.vue"
-  },
-  "GetTodos": {
-    "description": "Auto imported from components/GetTodos.vue"
   },
   "LoginCard": {
     "description": "Auto imported from components/LoginCard.vue"
@@ -25,5 +16,8 @@
   },
   "SignupCard": {
     "description": "Auto imported from components/SignupCard.vue"
+  },
+  "Todo": {
+    "description": "Auto imported from components/Todo.vue"
   }
 }

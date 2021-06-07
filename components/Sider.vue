@@ -43,10 +43,6 @@ height: 100%;
 width: 290px;
 background-color: #f4f4f4;
 }
-@media (max-width: 1010px){
-.sider {
-    width: 50px;
-}}
 .v-navigation-drawer{
     height: 100%;
     width: 290px !important;
