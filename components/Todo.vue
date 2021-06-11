@@ -12,14 +12,14 @@
                 </template>
             </v-text-field>
         <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="(todo, index) in todos" :key="todo">
-                <button class="btn__circle" @click="RemoveTodo(index)">
+            <li class="todo" v-for="todo in todos" :key="todo">
+                <button class="btn__circle" @click="RemoveTodo(todo)">
                 </button>{{ todo }}
                 </li>
         </ul>
-        <ul class="list-of-complete-todos" style="list-style-type:none;">
+        <ul class="list-of-todos" style="list-style-type:none;">
             <li class="todo" v-for="complete in completed_todos" :key="complete">
-                {{complete}}
+               <del> {{ complete }} </del>
             </li>
         </ul>
         </v-form>
@@ -54,8 +54,8 @@ mounted(){
             this.todo = '';
          }
     
-     },RemoveTodo(todo){
-         this.$store.commit("todo/remove",todo)
+     },RemoveTodo(index){
+         this.$store.commit("todo/remove",index)
      }
  }
 }
@@ -78,10 +78,11 @@ mounted(){
     border:1px solid rgb(24, 105, 255);    
     height:20px;
     width: 20px;
-    margin:0 35px 0 35px;
+    margin-right: 35px;
     border-radius:50%;
 }
 .todo{
+    padding-left: 40px;
     height: 50px;
     display: flex;
     justify-content: flex-start;
