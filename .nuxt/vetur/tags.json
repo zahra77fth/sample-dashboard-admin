@@ -11,6 +11,9 @@
   "Navbar": {
     "description": "Auto imported from components/Navbar.vue"
   },
+  "Profile": {
+    "description": "Auto imported from components/Profile.vue"
+  },
   "Sider": {
     "description": "Auto imported from components/Sider.vue"
   },

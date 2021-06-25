@@ -1,4 +1,5 @@
 <template>
+        <div class="contaier">
         <div class="navbar">
             <div class="navbar_menu-icon ">
             <button class="icon-btn"><v-icon light class="icon_color icon_">mdi-dots-grid</v-icon></button><p style="padding: 0 0 0 8px">To Do</p>
@@ -23,10 +24,23 @@
                 <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
                 <button class="icon-btn"><v-icon class="icon_color">mdi-help</v-icon></button>
                 <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
-                <button class="info-btn"><div class="info_icon">AF</div></button>
+                <button class="info-btn" @click="visible = !visible"><div class="info_icon">AF</div></button>
             </div>
-        </div>    
+        </div>
+        <Profile v-if="visible"></Profile>
+        </div>
 </template>
+<script>
+export default {
+     data() {
+       return{
+            visible : false
+       }
+  },
+
+}
+</script>
+
 <style scoped lang="scss">
 .navbar{
     height: 48px;
