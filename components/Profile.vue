@@ -4,33 +4,32 @@
     max-width="344"
     outlined
   >
-    <v-list-item three-line>
-      <v-list-item-content>
-        <div class="text-overline mb-4">
-          OVERLINE
+  <div class="text-overline mb-4">
+          Axon
+      <v-btn
+        rounded
+        text
+      >
+        Sign out
+      </v-btn>
         </div>
-        <v-list-item-title class="text-h5 mb-1">
-          Headline 5
-        </v-list-item-title>
-        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
-      </v-list-item-content>
-
-      <v-list-item-avatar
+    <v-list-item three-line>
+        <v-list-item-avatar
         tile
         size="80"
         color="grey"
       ></v-list-item-avatar>
+      <v-list-item-content>
+        <v-list-item-title class="text-h6 mb-1">
+          afagh fth
+        </v-list-item-title>
+        <v-list-item-subtitle>zhr77fth@gmail.com</v-list-item-subtitle>
+        <v-list-item-subtitle><NuxtLink to="">my axon account</NuxtLink></v-list-item-subtitle>
+        <v-list-item-subtitle><NuxtLink to="">my profile</NuxtLink></v-list-item-subtitle>
+      </v-list-item-content>
     </v-list-item>
+  
 
-    <v-card-actions>
-      <v-btn
-        outlined
-        rounded
-        text
-      >
-        Button
-      </v-btn>
-    </v-card-actions>
     </v-card>
 </template>
 <style scoped lang="scss">
@@ -40,5 +39,11 @@
     top: 48px;
     z-index: 1;
     display: inherit;
+}
+.text-overline{
+  padding-left: 20px;
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
