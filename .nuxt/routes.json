@@ -21,6 +21,34 @@
     "_name": "_21af0d73"
   },
   {
+    "name": "todo-pages-assigned_to_me",
+    "path": "/todo-pages/assigned_to_me",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/assigned_to_me.vue",
+    "chunkName": "pages/todo-pages/assigned_to_me",
+    "_name": "_47b72672"
+  },
+  {
+    "name": "todo-pages-important",
+    "path": "/todo-pages/important",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/important.vue",
+    "chunkName": "pages/todo-pages/important",
+    "_name": "_59fda32b"
+  },
+  {
+    "name": "todo-pages-myday",
+    "path": "/todo-pages/myday",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/myday.vue",
+    "chunkName": "pages/todo-pages/myday",
+    "_name": "_110eea0e"
+  },
+  {
+    "name": "todo-pages-planned",
+    "path": "/todo-pages/planned",
+    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/planned.vue",
+    "chunkName": "pages/todo-pages/planned",
+    "_name": "_1a2137e6"
+  },
+  {
     "name": "todo-pages-tasks",
     "path": "/todo-pages/tasks",
     "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/tasks.vue",

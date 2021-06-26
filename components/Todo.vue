@@ -17,8 +17,11 @@
                 </button>{{ todo }}
                 </li>
         </ul>
+        
         <ul class="list-of-todos" style="list-style-type:none;">
             <li class="todo" v-for="complete in completed_todos" :key="complete">
+                <button class="btn__complete-circle" @click="addToTodo(complete)">
+                </button>
                <del> {{ complete }} </del>
             </li>
         </ul>
@@ -32,7 +35,8 @@ export default{
       data() {
     return {
     rating: 1,
-      todo: ''  
+      todo: '',
+      complete:''
     }
   },
 computed:{
@@ -56,6 +60,9 @@ mounted(){
     
      },RemoveTodo(index){
          this.$store.commit("todo/remove",index)
+     },
+     addToTodo(complete){
+            this.$store.commit("todo/addAgain",complete);
      }
  }
 }
@@ -66,15 +73,25 @@ mounted(){
 .todo-input{
     width: calc(100vw - 290px);
     padding-right: 32px;
+    padding-left: 12px;
 }
 @include mediaScreen($value:1010px){
     .todo-input {
         width: 100vw;
         margin-bottom: 5px;
+        height: 30px !important;
     }
 }
 .btn__circle{
     background-color:#fff;
+    border:1px solid rgb(24, 105, 255);    
+    height:20px;
+    width: 20px;
+    margin-right: 35px;
+    border-radius:50%;
+}
+.btn__complete-circle{
+    background-color:rgb(24, 105, 255);
     border:1px solid rgb(24, 105, 255);    
     height:20px;
     width: 20px;
@@ -90,6 +107,7 @@ mounted(){
     border-bottom: 2px solid rgb(214, 214, 214);
     width: 100%;
 }
+
 .list-of-todos{
     padding: 0;
 }

@@ -1,7 +1,6 @@
 <template>
     <div>
-      <h5 class="page_title">Tasks</h5>
-      <Todo />
+      <h5 class="page_title">Assidned to you</h5>
     </div>
 </template>
 
@@ -12,16 +11,11 @@ export default {
 };
 </script>
 <style scoped>
-.register-link {
-  margin-top: 48px;
-  margin-bottom: 48px;
-}
-
 .page_title{
   margin: 0;
   padding: 12px 16px 0px;
-  background-color: white;
-  color: #3e69e4;
+
+  color: #5ca52d;
 }
 </style>
 

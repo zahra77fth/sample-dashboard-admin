@@ -24,7 +24,7 @@ export default {
     height: 100%;
     margin: 0;
     background-color: map-get($colors, --v-surface-base);
-@include flex($justifyContent:center , $alignItems:center)
+@include flex($justifyContent:left, $alignItems:flex-start)
 }
 
 .Sider{
