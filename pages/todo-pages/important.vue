@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="todo-content">
       <h5 class="page_title">important...</h5>
       <Todo />
     </div>
@@ -21,6 +21,10 @@ export default {
   padding: 12px 16px 0px;
   background-color: white;
   color: #5ca52d;
+}
+.todo-content{
+  width: calc(100vw - 290px);
+  flex-shrink: 100;
 }
 </style>
 

@@ -1,24 +1,19 @@
 export const state = () => ({
-    todos: [],
-    completed_todos: [],
-    info: "todo name"
+    todos: []
   })
   
-  export const mutations = {
-    add(state, text) {
-      state.todos.push(text)
+export const mutations = {
+    ADD_TO_TODO(state, text) {
+      state.todos.push({
+        id: state.todos.slice(-1)[0].id + 1,
+        title: text,
+        completed: false
+      })
     },
-    remove(state, todo) {
-      state.completed_todos.push(todo);
-      state.todos.splice(state.todos.indexOf(todo), 1)
-    },
-    addAgain(state, todo) {
-      state.todos.push(todo)
-      state.completed_todos.splice(state.completed_todos.indexOf(todo), 1)
-    },
-    showInfo(state, todo_name){
-      state.info = todo_name;
-    }
+    COMPLETE_TODO(state, todo){
+      todo.completed = !todo.completed
+  },
   }
+
   
   

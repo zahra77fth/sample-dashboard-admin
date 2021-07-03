@@ -5,11 +5,11 @@
         </div>
         <div class="add-to-page card">
             <v-text-field
-                v-model="todo"
                 class="todo-input"
-                label= "info()"
+                v-model="todoTitle"
                 flat
                 solo>
+                {{todoTitle}}
             </v-text-field>
         </div>
         <div class="calender card">

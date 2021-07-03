@@ -24,7 +24,6 @@
   export default {
     data () {
       return {
-        show: false,
         password: '',
                 rules: {
           required: value => !!value || 'Required.',

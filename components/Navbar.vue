@@ -1,33 +1,33 @@
 <template>
         <div class="contaier">
-        <div class="navbar">
-            <div class="navbar_menu-icon ">
-            <button class="icon-btn"><v-icon light class="icon_color icon_">mdi-dots-grid</v-icon></button><p style="padding: 0 0 0 8px">To Do</p>
+            <div class="navbar">
+                <div class="navbar_menu-icon ">
+                    <button class="icon-btn"><v-icon light class="icon_color icon_">mdi-dots-grid</v-icon></button><p style="padding: 0 0 0 8px">To Do</p>
+                </div>
+                <v-form class="todo">
+                    <v-btn class="search-btn" small> <v-icon right>
+                        mdi-magnify 
+                        </v-icon>
+                        <v-text-field
+                            label=""
+                        >
+                            <template v-slot:progress>
+                                <v-progress-linear
+                                absolute
+                                height="0"
+                                ></v-progress-linear>
+                                </template>
+                        </v-text-field>
+                    </v-btn>
+                </v-form>
+                <div class="navbar_right-icons">
+                    <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
+                    <button class="icon-btn"><v-icon class="icon_color">mdi-help</v-icon></button>
+                    <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
+                    <button class="info-btn" @click="visible = !visible"><div class="info_icon">AF</div></button>
+                </div>
             </div>
-            <v-form class="todo">
-                <v-btn class="search-btn" small> <v-icon right>
-                    mdi-magnify 
-                </v-icon>
-                <v-text-field
-                        label=""
-                >
-                <template v-slot:progress>
-                    <v-progress-linear
-                    absolute
-                    height="0"
-        ></v-progress-linear>
-        </template>
-        </v-text-field>
-                </v-btn>
-            </v-form>
-            <div class="navbar_right-icons">
-                <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
-                <button class="icon-btn"><v-icon class="icon_color">mdi-help</v-icon></button>
-                <button class="icon-btn"><v-icon class="icon_color">mdi-cog-outline</v-icon></button>
-                <button class="info-btn" @click="visible = !visible"><div class="info_icon">AF</div></button>
-            </div>
-        </div>
-        <Profile v-if="visible"></Profile>
+            <Profile v-if="visible"></Profile>
         </div>
 </template>
 <script>
@@ -109,7 +109,6 @@ export default {
 
     }
 }
-
 .v-icon{
     margin: 0 !important;
 }

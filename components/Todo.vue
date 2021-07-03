@@ -8,20 +8,20 @@
                 flat
                 solo>
                 <template #append>
-                    <v-btn text @click='sub(todo)'>ADD</v-btn>
+                    <v-btn text @click='addTodo(todo)'>ADD</v-btn>
                 </template>
             </v-text-field>
         <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="todo in todos" :key="todo" @click="showInfo(todo)">
-                <button class="btn__circle" @click="RemoveTodo(todo)" >
-                </button>{{ todo }}
+            <li class="todo" v-for="todo in todos" :key="todo">
+                <button class="btn__circle" @click="markTodo(todo.title)" >
+                </button>{{ todo.title }}
                 </li>
         </ul>
         
         <ul class="list-of-todos" style="list-style-type:none;">
             <div >
-            <li class="todo" v-for="complete in completed_todos" :key="complete" @click="showInfo(complete)" >
-                <button class="btn__complete-circle" @click="addToTodo(complete)">
+            <li class="todo" v-for="complete in completed_todos" :key="complete">
+                <button class="btn__complete-circle" @click="unmarkTodo(complete)">
                 </button>
                <del> {{ complete }} </del>
             </li>
@@ -37,7 +37,6 @@
 export default{
       data() {
     return {
-    rating: 1,
       todo: '',
       complete:'',
       visible : false
@@ -45,29 +44,25 @@ export default{
   },
 computed:{
     todos(){
-         return this.$store.state.todo.todos;
+        return this.$store.state.todo.todos;
           },
     completed_todos(){
         return this.$store.state.todo.completed_todos;
     }
-
 },
-mounted(){
-    
-},
- methods:{
-     sub(todo){
-         if(todo){
-            this.$store.commit("todo/add",this.todo);
+methods:{
+    addTodo(todo){
+        if(todo){
+            this.$store.commit("todo/addToTodos",this.todo);
             this.todo = '';
-         }
-    
-     },RemoveTodo(index){
-         this.$store.commit("todo/remove",index)
-     },
-     addToTodo(complete){
-            this.$store.commit("todo/addAgain",complete);
-     },
+        }
+    },
+    markTodo(index){
+         this.$store.commit("todo/markTodo",index)
+    },
+    unmarkTodo(complete){
+        this.$store.commit("todo/unmarkTodo",complete);
+    },
  }
 }
 </script>
