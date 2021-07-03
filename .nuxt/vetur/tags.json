@@ -22,5 +22,8 @@
   },
   "Todo": {
     "description": "Auto imported from components/Todo.vue"
+  },
+  "TodoInfo": {
+    "description": "Auto imported from components/TodoInfo.vue"
   }
 }

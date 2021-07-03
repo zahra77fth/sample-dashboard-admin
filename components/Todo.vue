@@ -12,21 +12,24 @@
                 </template>
             </v-text-field>
         <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="todo in todos" :key="todo">
-                <button class="btn__circle" @click="RemoveTodo(todo)">
+            <li class="todo" v-for="todo in todos" :key="todo" @click="showInfo(todo)">
+                <button class="btn__circle" @click="RemoveTodo(todo)" >
                 </button>{{ todo }}
                 </li>
         </ul>
         
         <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="complete in completed_todos" :key="complete">
+            <div >
+            <li class="todo" v-for="complete in completed_todos" :key="complete" @click="showInfo(complete)" >
                 <button class="btn__complete-circle" @click="addToTodo(complete)">
                 </button>
                <del> {{ complete }} </del>
             </li>
+            </div>
         </ul>
         </v-form>
     </v-app>
+    
 </template>
 
 <script>
@@ -36,7 +39,8 @@ export default{
     return {
     rating: 1,
       todo: '',
-      complete:''
+      complete:'',
+      visible : false
     }
   },
 computed:{
@@ -63,21 +67,23 @@ mounted(){
      },
      addToTodo(complete){
             this.$store.commit("todo/addAgain",complete);
-     }
+     },
  }
 }
 </script>
 
 <style scoped lang="scss">
+
 @import "../assets/_variables.scss";
+.form-of-todos{
+    width: 100%;
+}
 .todo-input{
-    width: calc(100vw - 290px);
     padding-right: 32px;
     padding-left: 12px;
 }
 @include mediaScreen($value:1010px){
     .todo-input {
-        width: 100vw;
         margin-bottom: 5px;
         height: 30px !important;
     }

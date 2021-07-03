@@ -4,9 +4,10 @@
     <div class="content">
       <div class="page-content">
         <Navbar />
-        <div class="ground">
-          <Sider />
-          <Nuxt />
+          <div class="ground">
+            <Sider />
+            <Nuxt />
+            <TodoInfo v-if=true></TodoInfo>
         </div>
       </div>
     </div>
@@ -21,10 +22,12 @@ export default {
 <style scoped lang="scss">
 @import "../assets/_variables.scss";
 .ground{
+    width: 100%;
     height: 100%;
     margin: 0;
     background-color: map-get($colors, --v-surface-base);
-@include flex($justifyContent:left, $alignItems:flex-start)
+  @include flex($justifyContent:left, $alignItems:stretch);
+    align-content: stretch;
 }
 
 .Sider{
@@ -37,21 +40,9 @@ background-color: #f4f4f4;
         width: 50px;
     }
 }
-.content{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-.page-content{
-    width: 100%;
-    height: 100%;
-}
 
-.todo{
-    width: 480px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+.TodoInfo{
+  width: 360px !important;
+  height: 100%;
 }
 </style>

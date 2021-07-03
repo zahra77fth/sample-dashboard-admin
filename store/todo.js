@@ -1,6 +1,7 @@
 export const state = () => ({
     todos: [],
-    completed_todos: []
+    completed_todos: [],
+    info: "todo name"
   })
   
   export const mutations = {
@@ -14,6 +15,9 @@ export const state = () => ({
     addAgain(state, todo) {
       state.todos.push(todo)
       state.completed_todos.splice(state.completed_todos.indexOf(todo), 1)
+    },
+    showInfo(state, todo_name){
+      state.info = todo_name;
     }
   }
   

@@ -14,3 +14,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Sider>` | `<sider>` (components/Sider.vue)
 - `<SignupCard>` | `<signup-card>` (components/SignupCard.vue)
 - `<Todo>` | `<todo>` (components/Todo.vue)
+- `<TodoInfo>` | `<todo-info>` (components/TodoInfo.vue)

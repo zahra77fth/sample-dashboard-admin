@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="todo-content">
       <h5 class="page_title">Tasks</h5>
       <Todo />
     </div>
@@ -11,7 +11,11 @@ export default {
   
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+.todo-content{
+  width: calc(100vw - 290px);
+  flex-shrink: 100;
+}
 .register-link {
   margin-top: 48px;
   margin-bottom: 48px;
