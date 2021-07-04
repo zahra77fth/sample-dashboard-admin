@@ -1,19 +1,27 @@
 export const state = () => ({
-    todos: []
+    todos: [],
+    completed_todos: [],
+    not_completed_todos: []
   })
   
 export const mutations = {
     ADD_TO_TODO(state, text) {
       state.todos.push({
-        id: state.todos.slice(-1)[0].id + 1,
+        id: state.todos.length,
         title: text,
         completed: false
       })
     },
-    COMPLETE_TODO(state, todo){
-      todo.completed = !todo.completed
+    TODO_STATUS(state, todo_id){
+
+      if ((state.todos[todo_id].completed) = false) {
+        state.not_completed_todos.push(state.todos[todo_id])
+      }else{
+        state.completed_todos.push(state.todos[todo_id])
+      }
   },
   }
+
 
   
   

@@ -12,18 +12,18 @@
                 </template>
             </v-text-field>
         <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="todo in todos" :key="todo">
-                <button class="btn__circle" @click="markTodo(todo.title)" >
+            <li class="todo" v-for="todo in not_completed_todos" :key="todo">
+                <button class="btn__circle" @click="change_todo_status(todo.id)" >
                 </button>{{ todo.title }}
                 </li>
         </ul>
         
         <ul class="list-of-todos" style="list-style-type:none;">
             <div >
-            <li class="todo" v-for="complete in completed_todos" :key="complete">
-                <button class="btn__complete-circle" @click="unmarkTodo(complete)">
+            <li class="todo" v-for="complete in computed_todos" :key="complete">
+                <button class="btn__complete-circle" @click="change_todo_status(complete.id)">
                 </button>
-               <del> {{ complete }} </del>
+               <del> {{ complete.title }} </del>
             </li>
             </div>
         </ul>
@@ -38,30 +38,26 @@ export default{
       data() {
     return {
       todo: '',
-      complete:'',
       visible : false
     }
   },
 computed:{
-    todos(){
-        return this.$store.state.todo.todos;
+    not_completed_todos(){
+        return this.$store.state.todo.not_completed_todos;
           },
-    completed_todos(){
+    computed_todos(){
         return this.$store.state.todo.completed_todos;
     }
-},
+    },
 methods:{
     addTodo(todo){
         if(todo){
-            this.$store.commit("todo/addToTodos",this.todo);
+            this.$store.commit("todo/ADD_TO_TODO",this.todo);
             this.todo = '';
         }
     },
-    markTodo(index){
-         this.$store.commit("todo/markTodo",index)
-    },
-    unmarkTodo(complete){
-        this.$store.commit("todo/unmarkTodo",complete);
+    change_todo_status(todo){
+         this.$store.commit("todo/TODO_STATUS",todo);
     },
  }
 }
