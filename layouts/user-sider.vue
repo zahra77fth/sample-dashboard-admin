@@ -5,9 +5,9 @@
       <div class="page-content">
         <Navbar />
           <div class="ground">
-            <Sider />
+            <Sider></Sider>
             <Nuxt />
-            <TodoInfo v-if=true></TodoInfo>
+            <TodoInfo v-if="todoInfoVisible"></TodoInfo>
         </div>
       </div>
     </div>
@@ -15,8 +15,13 @@
 </template>
 
 <script>
-export default {
- 
+export default{
+computed:{
+    todoInfoVisible(){
+        return this.$store.state.todo.infoVisiblity;
+          },
+    },
+
 }
 </script>
 <style scoped lang="scss">

@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '../layouts/error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_5898fc3e from 'nuxt_plugin_plugin_5898fc3e' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_plugin_3c90f5ad from 'nuxt_plugin_plugin_3c90f5ad' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_8290879a from 'nuxt_plugin_bootstrapvue_8290879a' // Source: ../plugins/bootstrap-vue (mode: 'all')
+import nuxt_plugin_plugin_60d68b94 from 'nuxt_plugin_plugin_60d68b94' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_7782f8e0 from 'nuxt_plugin_plugin_7782f8e0' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_8290879a from 'nuxt_plugin_bootstrapvue_8290879a' // Source: ..\\plugins\\bootstrap-vue (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -209,12 +209,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_5898fc3e === 'function') {
-    await nuxt_plugin_plugin_5898fc3e(app.context, inject)
+  if (typeof nuxt_plugin_plugin_60d68b94 === 'function') {
+    await nuxt_plugin_plugin_60d68b94(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_3c90f5ad === 'function') {
-    await nuxt_plugin_plugin_3c90f5ad(app.context, inject)
+  if (typeof nuxt_plugin_plugin_7782f8e0 === 'function') {
+    await nuxt_plugin_plugin_7782f8e0(app.context, inject)
   }
 
   if (typeof nuxt_plugin_bootstrapvue_8290879a === 'function') {

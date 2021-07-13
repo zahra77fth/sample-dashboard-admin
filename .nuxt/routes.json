@@ -2,64 +2,64 @@
   {
     "name": "forget-password",
     "path": "/forget-password",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/forget-password.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\forget-password.vue",
     "chunkName": "pages/forget-password",
-    "_name": "_6498c930"
+    "_name": "_731a44a8"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/login.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\login.vue",
     "chunkName": "pages/login",
-    "_name": "_51344b5e"
+    "_name": "_37bb3cd6"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/signup.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\signup.vue",
     "chunkName": "pages/signup",
-    "_name": "_21af0d73"
+    "_name": "_0c064afb"
   },
   {
     "name": "todo-pages-assigned_to_me",
     "path": "/todo-pages/assigned_to_me",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/assigned_to_me.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\assigned_to_me.vue",
     "chunkName": "pages/todo-pages/assigned_to_me",
-    "_name": "_47b72672"
+    "_name": "_3b199b8b"
   },
   {
     "name": "todo-pages-important",
     "path": "/todo-pages/important",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/important.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\important.vue",
     "chunkName": "pages/todo-pages/important",
-    "_name": "_59fda32b"
+    "_name": "_69eabb1c"
   },
   {
     "name": "todo-pages-myday",
     "path": "/todo-pages/myday",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/myday.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\myday.vue",
     "chunkName": "pages/todo-pages/myday",
-    "_name": "_110eea0e"
+    "_name": "_6afe45c0"
   },
   {
     "name": "todo-pages-planned",
     "path": "/todo-pages/planned",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/planned.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\planned.vue",
     "chunkName": "pages/todo-pages/planned",
-    "_name": "_1a2137e6"
+    "_name": "_c81cedd8"
   },
   {
     "name": "todo-pages-tasks",
     "path": "/todo-pages/tasks",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/todo-pages/tasks.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\todo-pages\\\\tasks.vue",
     "chunkName": "pages/todo-pages/tasks",
-    "_name": "_7274c117"
+    "_name": "_340b0844"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/afagh/Documents/my-projects/nuxt/Axon-dashboard-admin/pages/index.vue",
+    "component": "C:\\\\Users\\\\fattahi.z\\\\Documents\\\\projects\\\\Axon-dashboard-admin\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_f0e6af72"
+    "_name": "_6e1399bf"
   }
 ]

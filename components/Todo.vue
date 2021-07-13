@@ -8,32 +8,32 @@
                 flat
                 solo>
                 <template #append>
-                    <v-btn text @click='addTodo(todo)'>ADD</v-btn>
+                    <v-btn text @click='add(todo)'>ADD</v-btn>
                 </template>
             </v-text-field>
-        <ul class="list-of-todos" style="list-style-type:none;">
-            <li class="todo" v-for="todo in not_completed_todos" :key="todo">
-                <button class="btn__circle" @click="change_todo_status(todo.id)" >
-                </button>{{ todo.title }}
-                </li>
+        <ul class="list-of-todos" style="list-style-type:none;" v-if="notCompleted[0] != undefined">
+        <h6 style="margin-left:30px">Your tasks</h6>
+            <li class="todo" v-for="(todo) in notCompleted" :key="`complete${todo.id}`" @click="showInfo(todo.id)">
+                <v-btn text icon class="btn__circle" @click.stop="changeStatus(todo)"  >
+                </v-btn>{{ todo.title }}
+            </li>
         </ul>
-        
-        <ul class="list-of-todos" style="list-style-type:none;">
-            <div >
-            <li class="todo" v-for="complete in computed_todos" :key="complete">
-                <button class="btn__complete-circle" @click="change_todo_status(complete.id)">
-                </button>
+        <ul class="list-of-todos" style="list-style-type:none;" v-if="completed[0] != undefined">
+        <h6 style="margin-left:30px">Completed</h6>
+            <div>
+            <li class="todo" v-for="(complete) in completed" :key="`complete${complete.id}`"  @click="showInfo(complete.id)">
+                <v-btn icon class="btn__complete-circle" @click.stop.prevent="changeStatus(complete)">
+                </v-btn>
                <del> {{ complete.title }} </del>
             </li>
             </div>
         </ul>
         </v-form>
-    </v-app>
-    
+    </v-app>    
 </template>
 
 <script>
-
+import { mapState } from 'vuex'
 export default{
       data() {
     return {
@@ -42,32 +42,29 @@ export default{
     }
   },
 computed:{
-    not_completed_todos(){
-        return this.$store.state.todo.not_completed_todos;
-          },
-    computed_todos(){
-        return this.$store.state.todo.completed_todos;
-    }
+    ...mapState('todo',["completed", "notCompleted"]),
     },
 methods:{
-    addTodo(todo){
-        if(todo){
-            this.$store.commit("todo/ADD_TO_TODO",this.todo);
-            this.todo = '';
-        }
+    add(todo){
+    if(todo){
+        this.$store.dispatch("todo/add",todo)
+        this.todo = ''}
     },
-    change_todo_status(todo){
-         this.$store.commit("todo/TODO_STATUS",todo);
+    changeStatus(id){
+        this.$store.dispatch("todo/changeStatus",id);
+    },
+    showInfo(todo){
+        this.$store.dispatch("todo/showInfo",todo);
     },
  }
 }
 </script>
 
 <style scoped lang="scss">
-
 @import "../assets/_variables.scss";
 .form-of-todos{
     width: 100%;
+    padding-right: 15px;
 }
 .todo-input{
     padding-right: 32px;
@@ -82,8 +79,9 @@ methods:{
 .btn__circle{
     background-color:#fff;
     border:1px solid rgb(24, 105, 255);    
-    height:20px;
-    width: 20px;
+    height:20px !important;
+    width: 20px !important;
+    padding: 0 !important;
     margin-right: 35px;
     border-radius:50%;
 }
@@ -104,7 +102,6 @@ methods:{
     border-bottom: 2px solid rgb(214, 214, 214);
     width: 100%;
 }
-
 .list-of-todos{
     padding: 0;
 }

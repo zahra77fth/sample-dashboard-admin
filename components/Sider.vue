@@ -1,5 +1,5 @@
 <template>
-  <div class="sider" >
+  <div class="sider"  @click="hideInfo">
     <div class="sider_header"></div>
     <v-navigation-drawer
         permanent
@@ -47,9 +47,23 @@
     </v-navigation-drawer>
   </div>
 </template>
+<script>
+export default{
+computed:{
+    todoInfoVisible(){
+        return this.$store.state.todo.infoVisiblity;
+          },
+    },
+  methods:{
+    hideInfo(){
+        this.$store.dispatch("todo/hideInfo");
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
 .sider{
-height: 100%;
+height: 100vh;
 width: 290px;
 background-color: #f4f4f4;
 }

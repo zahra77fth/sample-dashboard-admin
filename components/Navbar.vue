@@ -10,6 +10,7 @@
                         </v-icon>
                         <v-text-field
                             label=""
+                            rounded
                         >
                             <template v-slot:progress>
                                 <v-progress-linear
