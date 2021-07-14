@@ -4,10 +4,15 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6498c930 = () => interopDefault(import('../pages/forget-password.vue' /* webpackChunkName: "pages/forget-password" */))
-const _51344b5e = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
-const _21af0d73 = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
-const _f0e6af72 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _731a44a8 = () => interopDefault(import('..\\pages\\forget-password.vue' /* webpackChunkName: "pages/forget-password" */))
+const _37bb3cd6 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _0c064afb = () => interopDefault(import('..\\pages\\signup.vue' /* webpackChunkName: "pages/signup" */))
+const _3b199b8b = () => interopDefault(import('..\\pages\\todo-pages\\assigned_to_me.vue' /* webpackChunkName: "pages/todo-pages/assigned_to_me" */))
+const _69eabb1c = () => interopDefault(import('..\\pages\\todo-pages\\important.vue' /* webpackChunkName: "pages/todo-pages/important" */))
+const _6afe45c0 = () => interopDefault(import('..\\pages\\todo-pages\\myday.vue' /* webpackChunkName: "pages/todo-pages/myday" */))
+const _c81cedd8 = () => interopDefault(import('..\\pages\\todo-pages\\planned.vue' /* webpackChunkName: "pages/todo-pages/planned" */))
+const _340b0844 = () => interopDefault(import('..\\pages\\todo-pages\\tasks.vue' /* webpackChunkName: "pages/todo-pages/tasks" */))
+const _6e1399bf = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -22,19 +27,39 @@ export const routerOptions = {
 
   routes: [{
     path: "/forget-password",
-    component: _6498c930,
+    component: _731a44a8,
     name: "forget-password"
   }, {
     path: "/login",
-    component: _51344b5e,
+    component: _37bb3cd6,
     name: "login"
   }, {
     path: "/signup",
-    component: _21af0d73,
+    component: _0c064afb,
     name: "signup"
   }, {
+    path: "/todo-pages/assigned_to_me",
+    component: _3b199b8b,
+    name: "todo-pages-assigned_to_me"
+  }, {
+    path: "/todo-pages/important",
+    component: _69eabb1c,
+    name: "todo-pages-important"
+  }, {
+    path: "/todo-pages/myday",
+    component: _6afe45c0,
+    name: "todo-pages-myday"
+  }, {
+    path: "/todo-pages/planned",
+    component: _c81cedd8,
+    name: "todo-pages-planned"
+  }, {
+    path: "/todo-pages/tasks",
+    component: _340b0844,
+    name: "todo-pages-tasks"
+  }, {
     path: "/",
-    component: _f0e6af72,
+    component: _6e1399bf,
     name: "index"
   }],
 

@@ -5,7 +5,22 @@
   "LoginCard": {
     "description": "Auto imported from components/LoginCard.vue"
   },
+  "Navbar": {
+    "description": "Auto imported from components/Navbar.vue"
+  },
+  "Profile": {
+    "description": "Auto imported from components/Profile.vue"
+  },
+  "Sider": {
+    "description": "Auto imported from components/Sider.vue"
+  },
   "SignupCard": {
     "description": "Auto imported from components/SignupCard.vue"
+  },
+  "Todo": {
+    "description": "Auto imported from components/Todo.vue"
+  },
+  "TodoInfo": {
+    "description": "Auto imported from components/TodoInfo.vue"
   }
 }

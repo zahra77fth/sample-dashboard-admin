@@ -6,7 +6,7 @@
                  <v-card-text>
                     <v-form>  
                 <v-text-field
-                    label="Full name"
+                    label="Email"
                     outlined
                  ></v-text-field>                        
                 <v-btn
@@ -24,7 +24,6 @@
   export default {
     data () {
       return {
-        show: false,
         password: '',
                 rules: {
           required: value => !!value || 'Required.',
@@ -33,43 +32,10 @@
     },
   }
 </script>
-<style scoped>
-.title{
-        font-weight: 100!important;
-        letter-spacing: .0073529412em!important;
-        font-size: 2.125rem!important;
-        padding: 16px;
-        margin-bottom: 16px;
-         font-family: Quicksand,sans-serif!important;
+<style scoped lang="scss">
+@import "../assets/form.scss";
+.v-application .primary {
+    background-color:  --v-primary-base !important;
+    border-color:  --v-primary-base !important;
 }
-.input{
-    background-color: white !important;
-    }
-.text-center{
-        text-align: center!important;
-}
-.v-card{
-    max-width: 480px !important;
-    justify-content: center;
-}
-.container{
-    padding: 0px;
-    width: 480px !important;
-}
-.row{
-    width: 100% !important;
-    margin: 0px !important;
-    justify-content: space-around !important;
-}
-.v-form{
-    max-width: 437px !important;
-    justify-content: center !important;
-    justify-items: center !important;
-}
-.caption{
-    font-size: .75rem!important;
-    text-align: center;
-    margin: 24px;
-}
-
 </style>

@@ -8,4 +8,9 @@ You can directly use them in pages and other components without the need to impo
 
 - `<ForgetPasswordCard>` | `<forget-password-card>` (components/ForgetPasswordCard.vue)
 - `<LoginCard>` | `<login-card>` (components/LoginCard.vue)
+- `<Navbar>` | `<navbar>` (components/Navbar.vue)
+- `<Profile>` | `<profile>` (components/Profile.vue)
+- `<Sider>` | `<sider>` (components/Sider.vue)
 - `<SignupCard>` | `<signup-card>` (components/SignupCard.vue)
+- `<Todo>` | `<todo>` (components/Todo.vue)
+- `<TodoInfo>` | `<todo-info>` (components/TodoInfo.vue)
